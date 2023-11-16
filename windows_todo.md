@@ -1,0 +1,4 @@
+- [ ] Enable bitlocker for drive C
+- [ ] update firewall behavior (correct profile unknown)
+- [ ] change password after n date
+- [ ] 
