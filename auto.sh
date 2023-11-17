@@ -135,9 +135,9 @@ configFix(){ #Fix config files
   else 
    echo 'PermitRootLogin no' >> /etc/ssh/sshd_config
   fi
-  #sed -i 's/^LoginGraceTime.*$/LoginGraceTime 60/'
-  #sed -i 's/^PermitEmptyPasswords.*$/PermitEmptyPasswords no/'
-  #sed -i 's/^.PasswordAuthenication*$/PasswordAuthentication yes/'
+  sed -i 's/^LoginGraceTime.*$/LoginGraceTime 60/'
+  sed -i 's/^PermitEmptyPasswords.*$/PermitEmptyPasswords no/'
+  sed -i 's/^.PasswordAuthenication*$/PasswordAuthentication yes/'
 }
 
 services() { #Lists active services and asks which ones to disable
